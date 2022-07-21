@@ -2,6 +2,8 @@
 
 `experimentalSuggestChain` doesn't throw when user closes Keplr's passport prompt.
 
+Check out [recording.mp4](recording.mp4). In the recording, you'll find that neither success nor error trigger causing te rest of the function to not be called.
+
 ## Running
 
 ```
