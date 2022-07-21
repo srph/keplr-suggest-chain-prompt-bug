@@ -17,11 +17,11 @@ import { chainInfo } from "./script-chain-info";
       console.log("[Suggest chain] attempting");
       try {
         await window.keplr.experimentalSuggestChain(chainInfo);
+        console.log("[Suggest chain] success");
       } catch (e) {
         console.log("[Suggest chain] error");
         alert("Failed to use suggest chain", e);
       }
-      console.log("[Suggest chain] success");
     }
 
     await window.keplr.enable(chainInfo.chainId);
@@ -40,8 +40,7 @@ import { chainInfo } from "./script-chain-info";
 
     try {
       const balances = await stargate.getAllBalances(key.bech32Address);
-      balances.innerHTML = JSON.stringify(balances);
-      console.log(balances);
+      $balances.innerHTML = JSON.stringify(balances);
     } catch (e) {
       alert("Error occurred trying to get wallet balances");
     }
