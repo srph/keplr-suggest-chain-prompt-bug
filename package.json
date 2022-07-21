@@ -1,0 +1,25 @@
+{
+  "name": "keplr-suggest-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "crypto-browserify": "^3.12.0",
+    "events": "^3.3.0",
+    "http-server": "^14.1.1",
+    "parcel": "^2.6.2",
+    "path-browserify": "^1.0.1",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0"
+  },
+  "dependencies": {
+    "@cosmjs/proto-signing": "^0.28.11",
+    "@cosmjs/stargate": "^0.28.11"
+  }
+}
